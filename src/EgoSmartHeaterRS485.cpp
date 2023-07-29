@@ -53,6 +53,14 @@ void preTransmission()
 }
 
 /*
+ * Definition of static members
+ * Not understood but works, see https://stackoverflow.com/questions/8016780/undefined-reference-to-static-constexpr-char
+ */
+constexpr uint16_t EgoSmartHeaterRS485::RegisterRelaisConfiguration[3];
+constexpr uint16_t EgoSmartHeaterRS485::RegisterRelaisOperatingTime[3];
+constexpr uint16_t EgoSmartHeaterRS485::RegisterErrorData[10];
+
+/*
  * Call back function to finalize modbus transmission
  */
 void postTransmission()
