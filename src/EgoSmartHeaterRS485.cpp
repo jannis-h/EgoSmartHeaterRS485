@@ -24,7 +24,7 @@
 #include "ModbusMaster.h"
 
 // I don't like this, but value is required in the call back functions
-int ego_sh_dere_pin = D0;
+int ego_sh_dere_pin = 0;
 
 //------------------------------------------------------------------------------
 /*
